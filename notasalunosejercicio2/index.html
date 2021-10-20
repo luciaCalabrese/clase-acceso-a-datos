@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="notasejemplo.js"></script>
+    <title>Notas alumnos</title>
+</head>
+<body>
+    <h1>Notas Alumnos</h1>
+    <label for="notas"> Introduzca la nota obtenida</label>
+    <input type="number" id="nota" max="10" min="0">
+
+    <button type="submit" onclick="cuandoPulsoelboton()"> Enviar </button>
+</body>
+<script>
+
+    
+    var cuandoPulsoelboton = () => {
+        var nota = document.getElementById('nota').value
+       var resultado = estoyaprobado(nota);
+       alert(resultado)
+    }
+</script>
+</html>
